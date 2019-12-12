@@ -8,4 +8,4 @@ Alejandro Hermosilla
 Sebastián Adasme
 
 
-![Captura 1](/imagenes/1.png)
+![Screenshot](1.png)
