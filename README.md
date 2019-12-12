@@ -8,6 +8,4 @@ Alejandro Hermosilla
 Sebastián Adasme
 
 
-<p align="center"> <img src="imagenes readme/1.png" width="350"/> <img src="your_relative_path_here_number_2_large_name" width="350"/> 
-
-</p> 
+![Captura 1](imagenes/1.png)
