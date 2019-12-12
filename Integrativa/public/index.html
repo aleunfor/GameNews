@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
+  <script src="ingresoBD.js"></script>
+
+  <title>Game News</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/blog-post.css" rel="stylesheet">
+
+  <link rel="shortcut icon" type="image/png" href="images/icono gn.png" />
+
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="images/game news.PNG" width="150px"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown show">
+              <a class="nav-link dropdown-toggle" href="noticias.html" role="button" id="dropdownMenuLink"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Noticias
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="tecnologias.html">Tecnologías</a>
+                <a class="dropdown-item" href="videojuegos.html">Videojuegos</a>
+                <a class="dropdown-item" href="consolas.html">Consolas</a>
+                <a class="dropdown-item" href="proximosJuegos.html">Proximos Juegos</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown show">
+              <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Gameplays
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="gameplays-terror.html">Terror</a>
+                <a class="dropdown-item" href="gameplays-accion.html">Acción</a>
+                <a class="dropdown-item" href="gameplays-aventuras.html">Aventuras</a>
+                <a class="dropdown-item" href="gameplays-luchas.html">Luchas</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="quienessomos.html">Quiénes somos?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+
+      <!-- Post Content Column -->
+      <div class="col-lg-8">
+        <br>
+        <h1 class="mt-4"><span class="badge badge-secondary">Lo mejor de los videojuegos a un sólo click!</span></h1>
+        <hr>
+        <!-- Preview Image -->
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/consolas.jpg" class="d-block w-100" alt="consolas">
+            </div>
+            <div class="carousel-item">
+              <img src="images/gameplays.jpg" class="d-block w-100" alt="gameplays">
+            </div>
+            <div class="carousel-item">
+              <img src="images/videojuegos.jpg" class="d-block w-100" alt="videojuegos">
+            </div>
+          </div>
+        </div>
+
+        <hr>
+        <!-- Title -->
+        <h2 class="mt-4">Nuevas Entregas 2019/2020</h1>
+
+          <!-- Author -->
+          <p class="lead">
+            por
+            <a href="https://www.facebook.com/profile.php?id=100001769178259" target="_blank">Alejandro
+              Hermosilla</a><br>
+
+          </p>
+          <hr>
+
+          <!-- Post Content -->
+          <p class="lead">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_U_n5wOuGK0" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </p>
+          <hr>
+
+          <!-- Title -->
+          <h2 class="mt-4">Vistazo a CyberPunk 2077</h1>
+
+            <!-- Author -->
+            <p class="lead">
+              por
+              <a href="https://www.facebook.com/profile.php?id=100001769178259" target="_blank">Alejandro
+                Hermosilla</a><br>
+
+            </p>
+            <hr>
+
+            <!-- Post Content -->
+            <p class="lead">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/fH7Bxfus_Zk" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </p>
+            <hr>
+
+
+
+            <!-- Title -->
+            <h2 class="mt-4">Todo sobre PS5</h1>
+              <!-- Author -->
+              <p class="lead">
+                por
+                <a href="https://www.facebook.com/profile.php?id=100001769178259" target="_blank">Alejandro
+                  Hermosilla</a><br>
+
+              </p>
+              <hr>
+
+              <!-- Post Content -->
+              <p class="lead">
+                <img src="images/ps5.jpg" width="400px" align="left" style="border-style:solid;border-width:4px;">
+                PS5 | PlayStation 5 | Fecha de lanzamiento de la PS 5, precio, especificaciones técnicas, juegos, mando,
+                retrocompatibilidad y más |
+                Sony plantea una nueva forma de jugar con la próxima PlayStation. Los futuros seguidores de la PS5 se
+                llevarán una experiencia sin
+                igual en el terreno de los videojuegos. Lo bueno es que hay información disponible de manera
+                oficial.<br>
+
+                Ahora, las consolas están por dar un próximo gran paso con Sony y su siguiente consola, la PlayStation
+                5. Hay mucha información al
+                respecto, casi todo en forma de rumor, pues se trata de algo tan importante que saldrá para enfrentarse
+                a la máquina de Microsoft,
+                la consola Xbox Scarlet, y ambas compañías guardan bajo 7 llaves todos los secretos de sus poderosas
+                "máquinas de batalla" para la
+                siguiente generación.<br>
+
+                Si bien es cierto que aún le quedan algunos años útiles a su predecesora la PlayStation 4, en algún
+                momento de su historia PlayStation
+                tiene que dar un paso adelante y seguir en su crecimiento como empresa de videojuegos. La consola
+                PlayStation Mini ha sido, a ojos de
+                muchos gamers en todo el mundo, un fracaso por la poca cantidad de juegos y el gran precio que pedían
+                por ella, por lo que todos los
+                fans de la industria estarían con ansias de un anuncio nuevo para calmar lo que dejó este controversial
+                producto.<br>
+
+                La compañía prepara un increíble anuncio para los próximos años y tiene a muchos ansiosos por tratarse
+                de un terminal que promete
+                supear cualquier expectativa con respecto a entregas anteriores de consolas. Ya diversos gamers sueñan
+                con los videojuegos que estarán
+                disponibles en esta nueva tecnología de Sony, sabiendo que la PlayStation 4 será pronto parte del
+                pasado. Su lanzamiento de noviembre del
+                2013 ya parece muy lejano y su recuerdo solo impacienta más a los seguidores de PlayStation.<br>
+
+                Por su parte, la comunidad de gamers que aman los videojuegos está dividida entre los que prefieren
+                esperar pacientemente cualquier información oficial
+                acerca de la nueva consola de Sony y los que necesitan respuestas lo más pronto posible. Para los
+                últimos hemos recopilado toda la información disponible
+                sobre la PlayStation 5 o PS5, desde información filtrada por la misma compañía en algunos foros de
+                Internet, información oficial de Sony y hasta algunas
+                teorías fundamentadas de especialistas de videojuegos.<br>
+
+                Este artículo se mantendrá actualizado constantemente conforme se revele más información sobre la PS5 o
+                PlayStation 5. Ahora queda en manos de Sony
+                informar sobre el anuncio oficial de la consola en la que está trabajando desde hace años, sus
+                especificaciones, juegos y muchos detalles más que sólo
+                ellos pueden afirmar.<br>
+              </p>
+              <hr>
+
+
+
+      </div>
+
+      <!-- Sidebar Widgets Column -->
+      <div class="col-md-4">
+
+        <!-- Search Widget -->
+        <div class="card my-4">
+          <h5 class="card-header">Patrocinadores</h5>
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="https://www.amd.com/es" target="_blank"><img src="images/Patrocinadores/amd.jpg"
+                    class="d-block w-100" alt="amd" width="200px"></a>
+              </div>
+              <div class="carousel-item">
+                <a href="https://www.gigabyte.com/" target="_blank"><img src="images/Patrocinadores/gigabyte.png"
+                    class="d-block w-100" alt="gigabyte" width="200px"></a>
+              </div>
+              <div class="carousel-item">
+                <a href="https://www.intel.la/content/www/xl/es/homepage.html" target="_blank"><img
+                    src="images/Patrocinadores/intel.jpg" class="d-block w-100" alt="intel" width="200px"></a>
+              </div>
+              <div class="carousel-item">
+                <a href="https://www.nvidia.com/es-la/" target="_blank"><img src="images/Patrocinadores/nvidia.jpg"
+                    class="d-block w-100" alt="nvidia" width="200px"></a>
+              </div>
+              <div class="carousel-item">
+                <a href="https://store.playstation.com/es-cl/home/games" target="_blank"><img
+                    src="images/Patrocinadores/ps sttore.png" class="d-block w-100" alt="sony" width="200px"></a>
+              </div>
+              <div class="carousel-item">
+                <a href="https://www.xbox.com/es-CL/" target="_blank"><img src="images/Patrocinadores/xbox live.jpg"
+                    class="d-block w-100" alt="xbox" width="200px"></a>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+
+          </div>
+        </div>
+
+        <!-- Categories Widget -->
+        <div class="card my-4">
+          <h5 class="card-header">Categorías</h5>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-lg-6">
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="tecnologias.html">Tecnologías</a>
+                  </li>
+                  <li>
+                    <a href="videojuegos.html">Videojuegos</a>
+                  </li>
+                  <li>
+                    <a href="consolas.html">Consolas</a>
+                  </li>
+                  <li>
+                    <a href="proximosJuegos.html">Proximos Juegos</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="gameplays-accion.html">Gameplays de Acción</a>
+                  </li>
+                  <li>
+                    <a href="gameplays-aventuras.html">Gameplays de Aventuras</a>
+                  </li>
+                  <li>
+                    <a href="gameplays-terror.html">Gameplays de Terror</a>
+                  </li>
+                  <li>
+                    <a href="gameplays-luchas.html">Gameplays de Luchas</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Side Widget -->
+        <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+        <div class="elfsight-app-10a97c5a-474d-49b8-9bac-38c16f284fe9"></div>
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Creado por:<br>
+        Alejandro Hermosilla<br>
+        Alex Adasme<br>
+        Sebastián Oñate</p>
+      <p class="m-0 text-center text-white">Copyright &copy; Game News 2019</p>
+      <p class="m-0 text-center text-white">
+        <a href="https://www.instagram.com/game_new5/?hl=es-la" target="_blank"><img src="images/Redes/insta.png" width="30px"></a>
+        <a href="https://twitter.com/GameNew12475464" target="_blank"><img src="images/Redes/twitter.png" width="30px"></a>
+        <a href="https://www.facebook.com/Game-News-100891664745365/" target="_blank"><img src="images/Redes/face.png" width="30px"></a>
+      </p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
