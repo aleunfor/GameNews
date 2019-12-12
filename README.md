@@ -5,7 +5,4 @@ sumate a nosotros a seguir este enorme travesia aun por descubrir
 Integrantes:
 Alex Adasme
 Alejandro Hermosilla
-Sebastián Adasme
-
-
-![Screenshot](1.png)
+Sebastián Oñate [Screenshot]( 
